@@ -4,5 +4,19 @@
 
 package frc.robot.subsystems;
 
+import com.ctre.phoenix6.configs.TalonFXConfiguration;
+import com.ctre.phoenix6.hardware.TalonFX;
+import com.ctre.phoenix.sensors.CANCoder;
+import com.ctre.phoenix.motorcontrol.can.TalonSRX;
+
 /** Add your docs here. */
-public class SwerveMods {}
+public class SwerveMods {
+
+    public int moduleNumber;
+    private double angleOffset;
+    private TalonFX mAngleMotor;
+    private TalonFX mDriveMotor;
+    private TalonSRX angleEncoder;
+    private double lastAngle;
+
+}
